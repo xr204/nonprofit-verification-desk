@@ -72,3 +72,7 @@ Quick start is above. For a real deployment you'll also need: The details below 
 - **Nonprofit Verification Desk:** By default, mail uses a **shared** verified sender. That is acceptable for testing, but it means a generic From address, limited volume, and shared reputation.
 - **Nonprofit Verification Desk:** For production, verify **your own** domain: `POST /v1/email/domain/verify` with `{"domain":"mail.yourco.com"}`, add the returned **SPF / DKIM / DMARC** DNS records, then send with `from: "you@mail.yourco.com"`.
 - **Nonprofit Verification Desk:** Use a dedicated subdomain and warm it gradually over several days so deliverability does not fall over the first time volume spikes.
+
+## Further reading
+
+- [Go SMS Account Notifications: Compare Passwordless Backup Alerts and Receipt Workloads](docs/go-sms-account-notifications-compare-passwordless-y9xtvg.md)
